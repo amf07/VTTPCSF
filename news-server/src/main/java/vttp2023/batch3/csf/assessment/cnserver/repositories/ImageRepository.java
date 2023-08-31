@@ -23,10 +23,7 @@ public class ImageRepository
 	protected void finalize() throws Throwable {
 		// TODO Auto-generated method stub
 		super.finalize();
-	} <imagit commit -m "first commit"
-	git branch -M main
-	git remote add origin https://github.com/amf07/NewFile.git
-	git push -u origin mainge, >
+	} <
 	
 
 
