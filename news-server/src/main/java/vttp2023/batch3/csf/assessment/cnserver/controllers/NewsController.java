@@ -1,11 +1,38 @@
 package vttp2023.batch3.csf.assessment.cnserver.controllers;
 
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
-public class NewsController {
+import org.springframework.web.bind.annotation.RestController;
+import lombok.AllArgsConstructor;
 
-	// TODO: Task 1
+
+
+
+@RequestMapping("/api/movie/")
+@AllArgsConstructor
+@RestController
+public class NewsController{
+
+		@Autowired
+		private NewsController;
+	
+		@GetMapping(path="{newsId}")
+		public ResponseEntity<String> getNews(@PathVariable(name="") String newsControlleString) {
+	
+		   String opt = newsid.getMovieDeets(Newsid);
+			 
+			return ResponseEntity.ok(opt);
+		}
+		}
+
+	
 
 
 	// TODO: Task 2

@@ -3,10 +3,12 @@ package vttp2023.batch3.csf.assessment.cnserver.repositories;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class NewsRepository {
+public class NewsRepository<VerificationToken> {
 
-	// TODO: Task 1 
-	// Write the native Mongo query in the comment above the method
+	@Repository
+public interface ShareANews extends ShareANews<NewsController, Long> {
+    Optional<NewsRepository> findByToken(String token);
+}
 	
 
 	// TODO: Task 2 
