@@ -15,15 +15,26 @@ public class NewsService {
 	// Do not change the method name and the return type
 	// You may add any number of parameters
 	// Returns the news id
-	public String postNews(/* Any number of parameters */) {
-		return "";
+	/**
+	 * @param message
+	 * @param templateEngine
+	 * @return
+	 */
+	public String postNews(String message, Object templateEngine) {
+        News context = new News();
+        context.setVariable("news", message);
+        return templateEngine.process("newsTemplate", context);
+    } {
+		return "news";
 	}
 	 
 	// TODO: Task 2
 	// Do not change the method name and the return type
 	// You may add any number of parameters
 	// Returns a list of tags and their associated count
-	public List<TagCount> getTags(/* Any number of parameters */) {
+	public List<TagCount> getTags(getNewsByTag getNewsByTag) {
+		getTags(null) = getTags getNewsByTag()
+		
 		return new LinkedList<>();
 	}
 
@@ -31,8 +42,11 @@ public class NewsService {
 	// Do not change the method name and the return type
 	// You may add any number of parameters
 	// Returns a list of news
-	public List<News> getNewsByTag(/* Any number of parameters */) {
+	public List<News> getNewsByTag(NewsService) {
+		NewsService newss = newss NewsService 
 		return new LinkedList<>();
 	}
+
+
 	
 }

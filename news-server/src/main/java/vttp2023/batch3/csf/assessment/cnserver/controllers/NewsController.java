@@ -15,7 +15,7 @@ import lombok.AllArgsConstructor;
 
 
 
-@RequestMapping("/api/movie/")
+@RequestMapping("/api/news/")
 @AllArgsConstructor
 @RestController
 public class NewsController{

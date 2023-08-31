@@ -37,6 +37,8 @@ public class News {
 	public String toString() {
 		return "News{id: %s, postDate: %d, title: %s}".formatted(id, getPostDateAsDate(), title);
 	}
+    public void setVariable(String string, String message) {
+    }
 
 	/* Do not modify this file */
 }
