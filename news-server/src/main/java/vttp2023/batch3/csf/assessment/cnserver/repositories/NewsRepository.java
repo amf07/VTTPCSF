@@ -9,10 +9,6 @@ public class NewsRepository<VerificationToken> {
 
 	@Repository
 public interface ShareANews extends ShareANews<NewsController
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/amf07/NewFile.git
-git push -u origin main
 , Long> {
     Optional<NewsRepository> findByToken(String token);
 }

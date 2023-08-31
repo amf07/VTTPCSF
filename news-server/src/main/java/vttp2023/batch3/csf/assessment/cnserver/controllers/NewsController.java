@@ -26,7 +26,7 @@ public class NewsController{
 		@GetMapping(path="{newsId}")
 		public ResponseEntity<String> getNews(@PathVariable(name="") String newsControlleString) {
 	
-		   String opt = newsid.getMovieDeets(Newsid);
+		   String opt = newsid.(Newsid);
 			 
 			return ResponseEntity.ok(opt);
 		}
